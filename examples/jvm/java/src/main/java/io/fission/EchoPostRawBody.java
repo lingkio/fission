@@ -5,7 +5,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 
-public class EchoRawBody implements Function {
+import io.fission.Context;
+import io.fission.Function;
+
+public class EchoPostRawBody implements Function {
 
 	@Override
 	public ResponseEntity<?> call(RequestEntity req, Context context) {
@@ -13,3 +16,4 @@ public class EchoRawBody implements Function {
 	}
 
 }
+
